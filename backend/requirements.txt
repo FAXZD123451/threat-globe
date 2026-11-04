@@ -1,0 +1,6 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+geoip2>=4.8
+# desarrollo
+pytest>=8
+httpx>=0.27

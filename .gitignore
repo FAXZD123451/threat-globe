@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datos locales: logs del honeypot y bases GeoIP (no se suben)
+data/
+*.mmdb
+
+# Configuración local del editor / herramientas
+.claude/
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db

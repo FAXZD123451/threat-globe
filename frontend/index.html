@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Threat Globe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="globe"></div>
+
+  <header class="brand">
+    <div class="logo">◉</div>
+    <div>
+      <h1>THREAT GLOBE</h1>
+      <p id="mode">MODO: SIMULACIÓN</p>
+    </div>
+  </header>
+
+  <aside class="panel left">
+    <section>
+      <h2>Ataques totales</h2>
+      <div class="big" id="total">0</div>
+    </section>
+    <section>
+      <h2>Por minuto</h2>
+      <div class="big" id="rate">0</div>
+    </section>
+    <section>
+      <h2>Tipos</h2>
+      <ul id="types" class="bars"></ul>
+    </section>
+  </aside>
+
+  <aside class="panel right">
+    <section>
+      <h2>Top países de origen</h2>
+      <ul id="countries" class="bars"></ul>
+    </section>
+    <section>
+      <h2>Sensores más atacados</h2>
+      <ul id="sensors" class="bars"></ul>
+    </section>
+    <section>
+      <h2>Credenciales más probadas</h2>
+      <ul id="creds" class="list"></ul>
+    </section>
+  </aside>
+
+  <footer class="feed">
+    <h2>Eventos en vivo</h2>
+    <ul id="feed"></ul>
+  </footer>
+
+  <script src="https://unpkg.com/globe.gl@2.33.1/dist/globe.gl.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
